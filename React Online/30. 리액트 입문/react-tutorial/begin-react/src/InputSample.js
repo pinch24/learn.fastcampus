@@ -2,23 +2,36 @@ import React, { useState } from 'react'
 
 function InputSample() {
 
-    const [text, setText] = useState('')
-    
+    const [inputs, setInputs] = useState({
+        name: '',
+        nickname: '',
+    })
+    const { name, nickname } = inputs
+
     const onChange = (e) => {
-        setText(e.target.value)
+        const { name, value } = e.target
+
+        setInputs({
+            ...inputs,
+            [name]: value
+        })
     }
 
     const onReset = () => {
-        setText('')
+        setInputs({
+            name: '',
+            nickname: '',
+        })
     }
 
     return (
         <div>
-            <input onChange={onChange} value={text} />
+            <input placeholder="Name" onChange={onChange} name='name' value={name} />
+            <input placeholder="Nickname" onChange={onChange} name='nickname' value={nickname} />
             <button onClick={onReset}>Reset</button>
             <div>
                 <b>Value: </b>
-                {text}
+                {name} ({nickname})
             </div>
         </div>
     )
