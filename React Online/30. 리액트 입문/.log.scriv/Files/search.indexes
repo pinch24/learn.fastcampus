@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="8B96EBB3-BCDC-4A74-AE48-9ED126332193">
+            <Title>02. 작업환경 준비</Title>
+            <Text># 02. 작업환경 준비
+Node.js/NPM, Yarn, Visual Studio Code
+
+~/react-tutorial/ $ npx create-react-app begin-react
+npx: installed 67 in 2.26s
+
+Creating a new React app in /Users/mk/Repositories/react.learn/07. React Online in FastCampus/30. 모던 리액트/react-tutorial/begin-react.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+yarn add v1.22.11
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+warning "react-scripts &gt; @typescript-eslint/eslint-plugin &gt; tsutils@3.20.0" has unmet peer dependency "typescript@&gt;=2.8.0 || &gt;= 3.2.0-dev || &gt;= 3.3.0-dev || &gt;= 3.4.0-dev || &gt;= 3.5.0-dev || &gt;= 3.6.0-dev || &gt;= 3.6.0-beta || &gt;= 3.7.0-dev || &gt;= 3.7.0-beta".
+[4/4] 🔨  Building fresh packages...
+success Saved lockfile.
+success Saved 7 new dependencies.
+info Direct dependencies
+├─ cra-template@1.1.2
+├─ react-dom@17.0.2
+├─ react-scripts@4.0.3
+└─ react@17.0.2
+info All dependencies
+├─ cra-template@1.1.2
+├─ immer@8.0.1
+├─ react-dev-utils@11.0.4
+├─ react-dom@17.0.2
+├─ react-scripts@4.0.3
+├─ react@17.0.2
+└─ scheduler@0.20.2
+✨  Done in 11.67s.
+
+Installing template dependencies using yarnpkg...
+yarn add v1.22.11
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+warning "react-scripts &gt; @typescript-eslint/eslint-plugin &gt; tsutils@3.20.0" has unmet peer dependency "typescript@&gt;=2.8.0 || &gt;= 3.2.0-dev || &gt;= 3.3.0-dev || &gt;= 3.4.0-dev || &gt;= 3.5.0-dev || &gt;= 3.6.0-dev || &gt;= 3.6.0-beta || &gt;= 3.7.0-dev || &gt;= 3.7.0-beta".
+warning " &gt; @testing-library/user-event@12.8.3" has unmet peer dependency "@testing-library/dom@&gt;=7.21.4".
+[4/4] 🔨  Building fresh packages...
+
+success Saved lockfile.
+success Saved 16 new dependencies.
+info Direct dependencies
+├─ @testing-library/jest-dom@5.14.1
+├─ @testing-library/react@11.2.7
+├─ @testing-library/user-event@12.8.3
+├─ react-dom@17.0.2
+├─ react@17.0.2
+└─ web-vitals@1.1.2
+info All dependencies
+├─ @testing-library/dom@7.31.2
+├─ @testing-library/jest-dom@5.14.1
+├─ @testing-library/react@11.2.7
+├─ @testing-library/user-event@12.8.3
+├─ @types/aria-query@4.2.2
+├─ @types/jest@27.0.1
+├─ @types/testing-library__jest-dom@5.14.1
+├─ css.escape@1.5.1
+├─ css@3.0.0
+├─ lz-string@1.4.4
+├─ min-indent@1.0.1
+├─ react-dom@17.0.2
+├─ react@17.0.2
+├─ redent@3.0.0
+├─ strip-indent@3.0.0
+└─ web-vitals@1.1.2
+✨  Done in 4.31s.
+Removing template package using yarnpkg...
+
+yarn remove v1.22.11
+[1/2] 🗑  Removing module cra-template...
+[2/2] 🔨  Regenerating lockfile and installing missing dependencies...
+warning " &gt; @testing-library/user-event@12.8.3" has unmet peer dependency "@testing-library/dom@&gt;=7.21.4".
+warning "react-scripts &gt; @typescript-eslint/eslint-plugin &gt; tsutils@3.20.0" has unmet peer dependency "typescript@&gt;=2.8.0 || &gt;= 3.2.0-dev || &gt;= 3.3.0-dev || &gt;= 3.4.0-dev || &gt;= 3.5.0-dev || &gt;= 3.6.0-dev || &gt;= 3.6.0-beta || &gt;= 3.7.0-dev || &gt;= 3.7.0-beta".
+success Uninstalled packages.
+✨  Done in 6.50s.
+
+Success! Created begin-react at /Users/mk/Repositories/react.learn/07. React Online in FastCampus/30. 모던 리액트/react-tutorial/begin-react
+Inside that directory, you can run several commands:
+
+  yarn start
+    Starts the development server.
+
+  yarn build
+    Bundles the app into static files for production.
+
+  yarn test
+    Starts the test runner.
+
+  yarn eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd begin-react
+  yarn start
+
+Happy hacking!
+~/react-tutorial/ $ 
+
+Terminal in VSCode
+~/react-tutorial/ $ ls  
+begin-react
+~/react-tutorial/ $ cd begin-react 
+~/begin-react/ $ ls
+README.md	node_modules	package.json	public		src		yarn.lock
+~/begin-react/ $ yarn start
+yarn run v1.22.11
+$ react-scripts start
+
+Compiled successfully!
+
+You can now view begin-react in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.4:3000
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+^C
+~/begin-react/ $ 
+
+
+
+</Text>
+        </Document>
+    </Documents>
+</SearchIndexes>
